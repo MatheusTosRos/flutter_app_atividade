@@ -1,14 +1,14 @@
 class Historia {
-  int? id;
-  String titulo;
-  String escopo;
-  String autor;
+  final int? id;
+  final String titulo;
+  final String escopo;
+  final int autorId;
 
   Historia({
     this.id,
     required this.titulo,
     required this.escopo,
-    required this.autor,
+    required this.autorId,
   });
 
   factory Historia.fromJson(Map<String, dynamic> json) {
@@ -16,7 +16,7 @@ class Historia {
       id: json['id'],
       titulo: json['titulo'],
       escopo: json['escopo'],
-      autor: json['autor'],
+      autorId: json['autorId'],
     );
   }
 
@@ -25,7 +25,7 @@ class Historia {
       'id': id,
       'titulo': titulo,
       'escopo': escopo,
-      'autor': autor,
+      'autorId': autorId,
     };
   }
 }
