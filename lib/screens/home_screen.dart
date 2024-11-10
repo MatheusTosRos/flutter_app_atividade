@@ -14,20 +14,28 @@ class HomeScreen extends StatelessWidget {
         title: const Text('Histórias BR - Dashboard'),
         backgroundColor: Colors.black,
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: GridView.builder(
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,
-            crossAxisSpacing: 16,
-            mainAxisSpacing: 16,
-          ),
-          itemCount: historias.length,
-          itemBuilder: (context, index) {
-            return HistoriaCard(historia: historias[index]);
-          },
-        ),
-      ),
+      body: historias.isEmpty
+          ? const Center(
+              child: Text(
+                'Nenhuma história encontrada',
+                style: TextStyle(fontSize: 18),
+              ),
+            )
+          : Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: GridView.builder(
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                  crossAxisSpacing: 16,
+                  mainAxisSpacing: 16,
+                  childAspectRatio: 0.8,
+                ),
+                itemCount: historias.length,
+                itemBuilder: (context, index) {
+                  return HistoriaCard(historia: historias[index]);
+                },
+              ),
+            ),
     );
   }
 }

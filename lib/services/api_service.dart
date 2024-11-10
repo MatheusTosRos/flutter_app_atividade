@@ -7,9 +7,13 @@ class ApiService {
   static const String baseUrl = 'http://localhost:3000';
 
   Future<List<Historia>> getHistorias() async {
-    final response = await http.get(Uri.parse('$baseUrl/historias'));
+    final response = await http.get(
+      Uri.parse('$baseUrl/historias'),
+      headers: {'Content-Type': 'application/json; charset=utf-8'},
+    );
     if (response.statusCode == 200) {
-      List jsonResponse = json.decode(response.body);
+      final decodedBody = utf8.decode(response.bodyBytes); 
+      List jsonResponse = json.decode(decodedBody);
       return jsonResponse.map((item) => Historia.fromJson(item)).toList();
     } else {
       throw Exception('Falha ao carregar histórias');
@@ -17,9 +21,13 @@ class ApiService {
   }
 
   Future<List<Autor>> getAutores() async {
-    final response = await http.get(Uri.parse('$baseUrl/autores'));
+    final response = await http.get(
+      Uri.parse('$baseUrl/autores'),
+      headers: {'Content-Type': 'application/json; charset=utf-8'},
+    );
     if (response.statusCode == 200) {
-      List jsonResponse = json.decode(response.body);
+      final decodedBody = utf8.decode(response.bodyBytes); 
+      List jsonResponse = json.decode(decodedBody);
       return jsonResponse.map((item) => Autor.fromJson(item)).toList();
     } else {
       throw Exception('Falha ao carregar autores');
@@ -29,11 +37,11 @@ class ApiService {
   Future<Historia> createHistoria(Historia historia) async {
     final response = await http.post(
       Uri.parse('$baseUrl/historias'),
-      headers: {'Content-Type': 'application/json'},
+      headers: {'Content-Type': 'application/json; charset=utf-8'},
       body: json.encode(historia.toJson()),
     );
     if (response.statusCode == 201) {
-      return Historia.fromJson(json.decode(response.body));
+      return Historia.fromJson(json.decode(utf8.decode(response.bodyBytes))); 
     } else {
       throw Exception('Falha ao criar história');
     }
@@ -42,7 +50,7 @@ class ApiService {
   Future<void> updateHistoria(Historia historia) async {
     final response = await http.put(
       Uri.parse('$baseUrl/historias/${historia.id}'),
-      headers: {'Content-Type': 'application/json'},
+      headers: {'Content-Type': 'application/json; charset=utf-8'},
       body: json.encode(historia.toJson()),
     );
     if (response.statusCode != 200) {
@@ -50,12 +58,14 @@ class ApiService {
     }
   }
 
-  Future<void> deleteHistoria(int id) async {
-    final response = await http.delete(
-      Uri.parse('$baseUrl/historias/$id'),
-    );
-    if (response.statusCode != 200) {
-      throw Exception('Falha ao deletar história');
-    }
+Future<void> deleteHistoria(int id) async {
+  final response = await http.delete(
+    Uri.parse('$baseUrl/historias/$id'),
+    headers: {'Content-Type': 'application/json; charset=UTF-8'},
+  );
+  if (response.statusCode != 200 && response.statusCode != 204) {
+    throw Exception('Falha ao deletar história');
   }
+}
+
 }

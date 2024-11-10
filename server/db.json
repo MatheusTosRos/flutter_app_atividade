@@ -2,33 +2,37 @@
   "historias": [
     {
       "id": "1",
-      "titulo": "A Lenda do Boto Cor de Rosa",
-      "escopo": "Nas águas dos rios amazônicos, conta-se que existe um boto que se transforma em um belo rapaz vestido de branco. Durante as festas nas comunidades ribeirinhas, ele seduz as jovens moças e depois retorna para as águas.",
-      "autor": "Folclore Amazônico"
+      "titulo": "A Lenda do Boto",
+      "escopo": "Histórias brasileiras são histórias complexas, contraditórias, múltiplas, fragmentadas, incompletas. A exposição é apresentada no ano em que se completam 200 anos da Independência do Brasil e 100 anos da Semana de Arte Moderna. Mas são também os 100 anos da morte do escritor Lima Barreto, 100 anos do nascimento dos artistas Judith Lauand e Rubem Valentim. Além disso, há hoje uma intensa revisão das histórias do Brasil – expressa em livros, exposições, conferências, filmes e documentários. Quais são os temas, as narrativas, os eventos, e as personagens a serem celebrados, estudados e questionados neste longo e conflituoso processo? Quais têm sido esquecidos de maneira proposital? \n\nDesde 2016, o MASP tem organizado uma série de mostras e projetos em torno de diferentes histórias – Histórias da infância (2016), Histórias da sexualidade (2017), Histórias afro-atlânticas (2018), Histórias das mulheres, Histórias feministas (2019), Histórias da dança (2020) e, agora, estas Histórias brasileiras (2022). A programação do ano ou do biênio – como é o caso de 2021-22 – em que se realizam essas exposições coletivas é dedicada a essas mesmas histórias e é complementada com mostras individuais que se conectam ao tema. Não por acaso, elas se aproximam dos conteúdos, das imagens e das agendas da história social, cultural e política, estando mais relacionadas a pautas contemporâneas e à vida cotidiana, do que estritamente à história da arte – como indica a sucessão de nossa série de Histórias. \n",
+      "autorId": 1
     },
     {
       "id": "2",
-      "titulo": "O Descobrimento do Brasil",
-      "escopo": "Em 22 de abril de 1500, a esquadra de Pedro Álvares Cabral avistou um monte, que foi chamado de Monte Pascoal. Este foi o primeiro contato dos portugueses com as terras que viriam a ser o Brasil.",
-      "autor": "Registros Históricos"
+      "titulo": "A Criação da Noite",
+      "escopo": "História sobre a criação da noite...",
+      "autorId": 2
     },
     {
-      "id": "3",
-      "titulo": "A História do Café no Brasil",
-      "escopo": "O café chegou ao Brasil em 1727, trazido da Guiana Francesa para o Pará pelo Sargento-Mor Francisco de Melo Palheta. Das primeiras mudas nasceu um império que transformou a economia brasileira.",
-      "autor": "Maria Santos"
+      "id": null,
+      "titulo": "teste",
+      "escopo": "sfgsdfddsdg",
+      "autorId": 1
     },
     {
-      "id": 1,
-      "titulo": "testes",
-      "escopo": "fdgsadgdsagad",
-      "autor": "adsfgaegaeg"
+      "id": null,
+      "titulo": "Matheus",
+      "escopo": "Tãsia Maão",
+      "autorId": 2
+    }
+  ],
+  "autores": [
+    {
+      "id": "1",
+      "nome": "Autor Desconhecido"
     },
     {
-      "id": 1,
-      "titulo": "asdfas",
-      "escopo": "asdsaasfasfas",
-      "autor": "safas"
+      "id": "2",
+      "nome": "Contador de Histórias"
     }
   ]
 }

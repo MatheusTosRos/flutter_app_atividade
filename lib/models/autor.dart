@@ -6,7 +6,7 @@ class Autor {
 
   factory Autor.fromJson(Map<String, dynamic> json) {
     return Autor(
-      id: json['id'],
+      id: int.parse(json['id'].toString()), // Garante que o id será um int
       nome: json['nome'],
     );
   }

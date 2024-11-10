@@ -13,10 +13,10 @@ class Historia {
 
   factory Historia.fromJson(Map<String, dynamic> json) {
     return Historia(
-      id: json['id'],
+      id: json['id'] != null ? int.parse(json['id'].toString()) : null, 
       titulo: json['titulo'],
       escopo: json['escopo'],
-      autorId: json['autorId'],
+      autorId: int.parse(json['autorId'].toString()), 
     );
   }
 
