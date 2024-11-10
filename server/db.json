@@ -1,22 +1,34 @@
 {
-    "historias": [
-        {
-            "id": 1,
-            "titulo": "A Lenda do Boto Cor de Rosa",
-            "escopo": "Nas águas dos rios amazônicos, conta-se que existe um boto que se transforma em um belo rapaz vestido de branco. Durante as festas nas comunidades ribeirinhas, ele seduz as jovens moças e depois retorna para as águas.",
-            "autor": "Folclore Amazônico"
-        },
-        {
-            "id": 2,
-            "titulo": "O Descobrimento do Brasil",
-            "escopo": "Em 22 de abril de 1500, a esquadra de Pedro Álvares Cabral avistou um monte, que foi chamado de Monte Pascoal. Este foi o primeiro contato dos portugueses com as terras que viriam a ser o Brasil.",
-            "autor": "Registros Históricos"
-        },
-        {
-            "id": 3,
-            "titulo": "A História do Café no Brasil",
-            "escopo": "O café chegou ao Brasil em 1727, trazido da Guiana Francesa para o Pará pelo Sargento-Mor Francisco de Melo Palheta. Das primeiras mudas nasceu um império que transformou a economia brasileira.",
-            "autor": "Maria Santos"
-        }
-    ]
+  "historias": [
+    {
+      "id": "1",
+      "titulo": "A Lenda do Boto Cor de Rosa",
+      "escopo": "Nas águas dos rios amazônicos, conta-se que existe um boto que se transforma em um belo rapaz vestido de branco. Durante as festas nas comunidades ribeirinhas, ele seduz as jovens moças e depois retorna para as águas.",
+      "autor": "Folclore Amazônico"
+    },
+    {
+      "id": "2",
+      "titulo": "O Descobrimento do Brasil",
+      "escopo": "Em 22 de abril de 1500, a esquadra de Pedro Álvares Cabral avistou um monte, que foi chamado de Monte Pascoal. Este foi o primeiro contato dos portugueses com as terras que viriam a ser o Brasil.",
+      "autor": "Registros Históricos"
+    },
+    {
+      "id": "3",
+      "titulo": "A História do Café no Brasil",
+      "escopo": "O café chegou ao Brasil em 1727, trazido da Guiana Francesa para o Pará pelo Sargento-Mor Francisco de Melo Palheta. Das primeiras mudas nasceu um império que transformou a economia brasileira.",
+      "autor": "Maria Santos"
+    },
+    {
+      "id": 1,
+      "titulo": "testes",
+      "escopo": "fdgsadgdsagad",
+      "autor": "adsfgaegaeg"
+    },
+    {
+      "id": 1,
+      "titulo": "asdfas",
+      "escopo": "asdsaasfasfas",
+      "autor": "safas"
+    }
+  ]
 }
